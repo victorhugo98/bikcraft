@@ -1,0 +1,60 @@
+.intro-bg{
+  background-color: var(--c12);
+  box-shadow: inset 0 -120px white;
+  position: relative;
+}
+.intro-bg h1{
+  color: white;
+}
+.intro-item{
+  align-self: end;
+  margin-bottom: 200px;
+}
+.intro-item::after{
+  content: "";
+  display: inline-block;
+  background-image: url(../decorativos/setacimapreta.svg);
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  bottom: 172px;
+  left: 40px;
+}
+.intro-item p, .intro-item h1{
+  margin-bottom: 30px;
+}
+.intro-item p{
+  line-height: 1.5;
+  color: var(--c5);
+}
+
+.intro-bg img{
+  object-fit: cover;
+  height: 100%;
+  border-radius: 4px;
+}
+@media (max-width:1500px){
+  .intro-item::after{
+    display: none;
+  }
+}
+@media(max-width:1200px){
+  .intro-item p{
+    font-size: 1.3rem;
+  }
+  .intro-item{
+    margin-top: 40px;
+  }
+}
+@media(max-width:800px){
+  .intro-bg{
+    background-color: var(--c11);
+  }
+  .intro-item{
+    margin-bottom: 0px;
+  }
+  .intro-bg img{
+    height: 300px;
+    width: 100%;
+  }
+}

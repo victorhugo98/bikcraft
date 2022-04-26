@@ -1,0 +1,121 @@
+@import url(./css/header.css);
+@import url(./css/intro.css);
+@import url(./css/escolha.css);
+@import url(./css/diferenciais.css);
+@import url(./css/parceiros.css);
+@import url(./css/depoimento.css);
+@import url(./css/seguros.css);
+@import url(./css/footer.css);
+:root{
+
+  --c1:#F7F7F7;
+  --c2:#EDEDED ;
+  --c3:#DEDEDE ;
+  --c4:#CCCCCC ;
+  --c5:#B3B3B3 ;
+  --c6:#9C9C9C ;
+  --c7:#707070 ;
+  --c8:#595959 ;
+  --c9:#404040;
+  --c10:#2E2E2E;
+  --c11:#121212;
+  --c12:#000000;
+  --p1:#FFBB00 ;
+  --p2:#E5A40B ;
+  --p3:#A66F00 ;
+  --p4:#664400 ;
+  --p5:#332200 ;
+  --gradiente: linear-gradient(#FFBF00, #F2A50C );;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul,li,a{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+img{
+  display: block;
+  max-width: 100%;
+}
+.conteiner{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  gap: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+.poppins-64{
+  font-family: 'poppins';
+  line-height: 1.2;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.roboto-24{
+  font-family: 'roboto';
+  font-size: 1.5rem;
+}
+.roboto-16{
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 1rem;
+line-height: 24px;
+}
+.poppins-24{
+  font-family: 'poppins';
+  font-size: 1.5rem;
+}
+
+#pontoAmarelo{
+  color: var(--p1) !important;
+}
+.botao{
+  background: linear-gradient(#d6a000, #cc8a07 );
+  border-radius: 5px;
+  padding:16px 32px;
+  display: inline-block;
+  font-family: 'poppins';
+  font-size: 1.5rem;
+  line-height: 36px;
+  font-weight: 600;
+  color: var(--p5);
+  word-break: keep-all;
+}
+.botao:hover{
+  background: linear-gradient(#b58802, #906000 );
+}
+.titulo-alinhar{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-bottom: 60px;
+}
+@media(max-width:1200px){
+  .poppins-64{
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+  .botao{ 
+    padding:10px 20px;
+    font-size: 1.1rem;
+  }
+  
+}
+@media(max-width:800px){
+  .conteiner{
+    grid-template-columns: 1fr ;
+  }
+}
+
+
+
+
+
+
+
