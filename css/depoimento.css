@@ -12,7 +12,20 @@
   margin-bottom: 120px;
   margin-right: 20px;
   margin-left: 20px;
+  position: relative;
 }
+.depoimento::before{
+  content: "";
+  display: inline-block;
+  background-image: url(../decorativos/top-left-p.svg);
+  position: absolute;
+  
+  width: 52px;
+  height: 52px;
+  top: -160px;
+  left:0px;
+}
+
 .depoimento-grid p{
   font-family: 'Merriweather','Playfair Display';
   font-size: 2.25rem;
@@ -49,7 +62,11 @@
 .depoimento-grid img{
   object-fit: cover;
   height: 100%;
-
+}
+@media(max-width:1600px){
+  .depoimento::before{
+    display: none;
+  }
 }
 @media(max-width:1300px){
   .depoimento-grid{
