@@ -1,0 +1,90 @@
+.escolha-bicicleta-bg{
+  background-color: var(--c11);
+}
+.escolha-bicicleta-conteiner{
+  max-width: 1200px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 0 auto;
+  padding-top: 60px;
+  margin-bottom: 120px;
+}
+.escolha-span{
+  color: var(--c5);
+  font-weight: 500;  
+}
+.escolha-bicicleta-conteiner h1{
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 60px;
+}
+.bicicletas-col-2 h2{
+font-family: 'Poppins';
+font-weight: 600;
+font-size: 2rem;
+color: var(--c11);
+line-height: 40px;
+padding-top: 8px;
+padding-bottom: 20px;
+}
+.bicicletas-col-2 p{
+font-family: 'Roboto';
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+color: var(--c8);
+}
+.escolha-lista ul {
+  display: flex;
+  flex-direction: column;
+  color: var(--c8);
+}
+.escolha-lista ul li{
+font-family: 'Poppins';
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+display: flex;
+gap: 12px;
+align-items: center;
+}
+.escolha-lista{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 32px;
+}
+.escolha-lista li + li{
+  padding-top: 16px;
+} 
+.escolha-lista .eletrico::before{
+  content: "";
+  width: 24px;
+  height: 22px;
+  background-image: url(../icones/eletrica.svg);
+  display: inline-block;
+}
+.escolha-lista .fibra::before{
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-image: url(../icones/carbono.svg);
+  display: inline-block;
+}
+.escolha-lista .km::before{
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-image: url(../icones/velocidade.svg);
+  display: inline-block;
+}
+.escolha-lista .rastreador::before{
+  content: "";
+  width: 22px;
+  height: 22px;
+  background-image: url(../icones/rastreador.svg);
+  display: inline-block;
+}
+.escolha-bicicletas-lista{
+  margin-bottom: 120px;
+}
