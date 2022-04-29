@@ -43,6 +43,9 @@ img{
   display: block;
   max-width: 100%;
 }
+img[src$= ".jpg"]{
+  border-radius: 5px;
+}
 .conteiner{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -101,6 +104,9 @@ line-height: 24px;
   .poppins-64{
     font-size: 3rem;
     line-height: 1.1;
+  }
+  .roboto-24{
+    font-size: 1.3rem;
   }
   .botao{ 
     padding:10px 20px;
