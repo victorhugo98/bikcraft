@@ -174,10 +174,6 @@
   .conteiner-seguro .botao{
     margin-bottom: 80px;
   }
-
-  .seguro-imagem{
-    padding-right: 20px;
-  }
   .conteiner-seguro-bg{
     background-color: var(--c11);
     box-shadow: inset 0px -60px var(--c11), inset 0px 60px white;
