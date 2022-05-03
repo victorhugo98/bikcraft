@@ -1,0 +1,191 @@
+.nimbus-bg{
+  background-color: var(--c11);
+  padding-bottom: 60px;
+  margin-bottom: 120px;
+}
+.conteiner-nimbus{
+  align-items: start;
+}
+.nimbus-conteiner{
+  margin-bottom: 0px;
+}
+.nimbus-col-1{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.nimbus-col-1 img{
+  flex: 1;
+  min-width: 130px;
+}
+.nimbus-col-1 img:first-child{
+  min-width: 100%;
+}
+.nimbus-col-2 p {
+  color: var(--c5);
+}
+.nimbus-col-2 p:not(.roboto-24){
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+.botao-lista{
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+.botao-lista-itens{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.botao-lista-itens span{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.nimbus-col-2 > span{
+  color: white;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  
+}
+.entrega::before{
+  content: "";
+  background: url(../icones/entrega.svg);
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+.estoque::before{
+  content: "";
+  background: url(../icones/estoque.svg);
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+}
+.botao-lista-itens span {
+  padding: 4px 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--c6);
+  background-color: var(--c12);
+  border-radius: 5px;
+}
+.informacoes-ul{
+  background-color: var(--c12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5px;
+  margin-top: 12px;
+  margin-bottom: 40px;
+}
+
+.informacoes-ul h2{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.informacoes-ul li{
+  padding: 32px;
+}
+.ficha-tecnica{
+  background-color: var(--c12);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 5px;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding: 32px;
+
+}
+.ficha-tecnica li{
+  color: var(--c4);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  border-bottom: 1px solid var(--c11);
+}
+.ficha-tecnica li:nth-child(even){
+  color: var(--c6);
+  text-align: right;
+}
+
+.escolha-bicicletas-interna li{
+  min-width: 320px;
+}
+.conteiner-seguro-bg{
+  background-color: var(--c11);
+  box-shadow: inset 0px -60px var(--c12), inset 0px 60px white;
+}
+.conteiner-seguro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1440px;
+  gap: 60px;
+  margin: 0 auto;
+  margin-top: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: end;
+}
+.conteiner-seguro h2{
+  color: white;
+}
+.conteiner-seguro .botao{
+  margin-bottom: 180px;
+}
+.conteiner-seguro p{
+  color: var(--c5);
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+.seguro-imagem{
+  object-fit: cover;
+  height: 100%;
+}
+@media (max-width:1310px){
+  .conteiner-seguro h2{
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+}
+@media (max-width:1310px){
+  .conteiner-seguro {
+    grid-template-columns: 1fr;
+  }
+  .conteiner-seguro .botao{
+    margin-bottom: 80px;
+  }
+
+  .seguro-imagem{
+    padding-right: 20px;
+  }
+  .conteiner-seguro-bg{
+    background-color: var(--c11);
+    box-shadow: inset 0px -60px var(--c11), inset 0px 60px white;
+  }
+}
+
+@media(max-width:800px){
+  .escolha-bicicletas-interna ul{
+    gap: 32px;
+  }
+}

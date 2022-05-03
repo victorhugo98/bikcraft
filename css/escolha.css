@@ -1,6 +1,5 @@
 .escolha-bicicletas ul{
   display: flex;
-  gap: 20px;
   margin: 0 auto;
   max-width: 1800px;
   gap: 50px;
