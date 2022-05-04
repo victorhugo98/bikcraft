@@ -119,3 +119,11 @@ align-items: center;
     box-shadow: none;
   }
 }
+@media(max-width:800px){
+  .conteiner-bicicletas{
+    gap: 32px !important;
+  }
+  .escolha-bicicleta-conteiner{
+    margin-bottom: 0px;
+  }
+}

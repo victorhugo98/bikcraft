@@ -30,7 +30,7 @@ height: 8px;
 background: #FFBB00;
 }
 .escolha-bicicletas li:hover h3::before{
-  width: 16px;
+  width: 20px;
   transition: .3s;
 }
 
