@@ -9,6 +9,7 @@
 @import url(./css/footer.css);
 @import url(./css/bicicletas.css);
 @import url(./css/nimbus.css);
+@import url(./css/contato.css);
 :root{
 
   --c1:#F7F7F7;
@@ -28,7 +29,7 @@
   --p3:#A66F00 ;
   --p4:#664400 ;
   --p5:#332200 ;
-  --gradiente: linear-gradient(#FFBF00, #F2A50C );;
+  --gradiente: linear-gradient(#FFBF00, #F2A50C );
 }
 *{
   margin: 0px;

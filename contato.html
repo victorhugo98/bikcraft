@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Playfair+Display&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <meta name="description" content="Projeto simples em HTML e CSS">
+  <title>Bikcraft - Bicicletas elétricas.</title>
+  <link rel="icon" href="./icones/eletrica.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="header-bg" >
+    <nav aria-label="Primária"> 
+      <a href="./" ><img src="./bikcraft.svg" alt="Logo Bikcraft"></a>
+      <ul>
+        <li><a href="./bicicletas.html">Bicicletas</a></li>
+        <li><a href="./seguros.html">Seguros</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <article class="escolha-bicicleta-bg" aria-label="Bicicletas Título">
+    <div class="escolha-bicicleta-conteiner conteiner-contato">
+    <span class="roboto-24 escolha-span">RESPOSTA EM ATÉ 24H</span>
+    <h1 class="poppins-64">Nosso contato<span id="pontoAmarelo">.</span></h1>
+    </div>
+  </article>
+
+  <article class="contato-bg">
+    <div class="contato-conteiner">
+      <div class="contato-loja">
+        <h2>Loja Online</h2>
+        <ul class="contato-rua" >
+          <li >Rua Ali Perto, 42</li>
+          <li>Rio de Janeiro, RJ</li>
+          <li>Brasil - Terra - Via Láctea</li>
+        </ul>
+        <ul class="contato-email">
+          <li >vendas@bikcraft.com</li>
+          <li>assistencia@bikcraft.com</li>
+        </ul>
+        <ul class="contato-telefone">
+          <li >+55 21 9999-9999</li>
+        </ul>
+        <ul class="contato-redes">
+          <li><img src="./redes/instagram-p.svg" alt="Ícone Instagram"></li>
+          <li><img src="./redes/facebook-p.svg" alt="Ícone Facebook"></li>
+          <li><img src="./redes/youtube-p.svg" alt="Ícone Youtube"></li>
+        </ul>
+      </div>
+
+      <form action="./" class="contato-form">
+        <div>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+      </div>
+      <div>
+        <label for="telefone">Telefone</label>
+        <input type="text" name="telefone" id="telefone" placeholder="(21)9999-9999" required>
+      </div>
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="contato@email.com" required>
+      </div>
+      <div class="mensagem">
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="5" placeholder="O que você precisa?" required></textarea>
+      </div>
+        <button class="botao">ENVIAR MENSAGEM</button>
+      </form>
+    </div>
+  </article>
+
+  <article class="contato-mapa">
+    <h3 class="poppins-64 titulo-alinhar">Lojas locais<span id="pontoAmarelo">.</span></h3>
+    <div class="contato-mapa-conteiner conteiner">
+      <div class="rio-de-janeiro">
+        <img src="./mapas/rio.jpg" alt="Localização Rio de Janeiro">
+        <div class="contato-margin">
+        <h4>Rio de Janeiro</h4>
+          <div class="endereco-mapa">
+              <div class="endereco-decorar">
+                <span>Rua Ali Perto,25</span>
+                <span>Rio de Janeiro, RJ</span>
+              </div>
+              <div class="endereco-decorar">
+                <span>rio@bikcraft.com</span>
+                <span>21 9999-9999</span>
+              </div>
+          </div>
+          <span>08-18h de seg à dom</span>
+        </div>
+      </div>
+      <div class="sao-paulo">
+        <img src="./mapas/sp.jpg" alt="Localização São Paulo">
+        <div class="contato-margin">
+        <h4>São Paulo</h4>
+          <div class="endereco-mapa">
+              <div class="endereco-decorar">
+                <span>Rua Ali Perto,25</span>
+                <span>São Paulo, RJ</span>
+              </div>
+              <div class="endereco-decorar">
+                <span>sp@bikcraft.com</span>
+                <span>11 9999-9999</span>
+              </div>
+          </div>
+          <span>08-18h de seg à dom</span>
+          </div>
+      </div>
+
+    </div>
+
+  </article>
+
+  
+  
+<footer class="footer" aria-label="Footer">
+<div class="footer-grid">
+  <div class="bikcraft-img-footer">
+    <a href="./" ><img src="./bikcraft.svg" alt="Logo Bikcraft"></a>
+  </div>
+  <div class="contato-footer">
+    <h3 class="roboto-24">CONTATO</h3>
+    <p>+55 21 9999-9999</p>
+    <p class="padding-bottom-detalhe">CONTATO@BIKCRAFT.COM</p>
+    <p class="padding-top-detalhe">Rua Ali Perto, 42 - Botafogo</p>
+    <p class="padding-bottom-detalhe">Rio de janeiro, RJ</p>
+      <div class="icones-footer">
+        <img src="./redes/instagram.svg" alt="">
+        <img src="./redes/facebook.svg" alt="">
+        <img src="./redes/youtube.svg" alt="">
+      </div>
+  </div>
+  <div class="informacoes-footer">
+    <h3 class="roboto-24">INFORMAÇÕES</h3>
+    <ul>
+      <li><a href="./bicicletas.html">Bicicletas</a></li>
+      <li><a href="./seguros.html">Seguros</a></li>
+      <li><a href="./contato.html">Contato</a></li>
+      <li><a href="./termos.html">Termos e Condições</a></li> 
+    </ul>
+  </div>
+  <p class="bikcraft-footer-p">Bikcraft©  Alguns direitos reservados.</p>
+</div>
+
+</footer>
+</body>
+</html>

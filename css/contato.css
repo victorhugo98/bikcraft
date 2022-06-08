@@ -1,0 +1,223 @@
+
+.contato-conteiner{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.conteiner-contato{
+  margin-bottom: 0px !important;
+}
+.contato-bg{
+  background-color: var(--c11);
+  box-shadow: inset 0px -120px var(--c1);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contato-loja{
+  background-color: var(--c12);
+  border-radius: 5px 0px 0px 5px;
+}
+.contato-loja h2{
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 60px;
+  line-height: 24px;
+  color: white;
+}
+.contato-loja li{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+  color: var(--c4);
+}
+.contato-loja ul+ul{
+  padding-top: 32px;
+}
+.contato-loja ul{
+  margin-left: 68px;
+}
+.contato-redes{
+  display: flex;
+  gap: 32px;
+}
+.contato-rua,.contato-email,.contato-telefone{
+  display: flex;
+  flex-direction: column;
+  align-items: top;
+  position: relative;
+  padding-left: 20px;
+}
+.contato-rua::before{
+  content: "";
+  background-image: url(../contato/local.svg) ;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: -8px;
+}
+.contato-email::before{
+  content: "";
+  background-image: url(../contato/email.svg) ;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: -8px;
+}
+.contato-telefone::before{
+  content: "";
+  background-image: url(../contato/telefone.svg) ;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  left: -8px;
+}
+.contato-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 60px;
+  gap: 20px;
+}
+
+.contato-form label{
+  display: block;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--c11);
+  padding-bottom: 4px;
+}
+.contato-form input, .contato-form textarea{
+  border: 2px solid transparent !important;
+  outline: none;
+}
+.contato-form input:focus, .contato-form textarea:focus{
+  border: 2px solid var(--p1) !important;
+  background-color: white;
+  box-shadow: 0 0 0 2px #fea !important;
+}
+
+.contato-form input, .contato-form textarea{
+  padding: 12px;
+  background-color: var(--c1);
+  border: none;
+  border-radius: 5px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 24px;
+  width: 100%;
+}
+.contato-form button{
+  border: none;
+  margin-top: 20px;
+}
+.email, .mensagem{
+  grid-column: 1/-1;
+}
+.rio-de-janeiro, .sao-paulo{
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.contato-mapa-conteiner h4{
+font-family: 'Poppins';
+font-weight: 600;
+font-size: 2rem;
+line-height: 40px;
+display: flex;
+gap: 8px;
+align-items: center;
+}
+.contato-mapa-conteiner h4::before{
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: #FFBB00;
+}
+.contato-mapa{
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--c1);
+}
+.endereco-mapa{
+  display: flex;
+  gap: 70px;
+  margin-top: 20px;
+  margin-bottom: 32px;
+}
+.endereco-mapa span{
+  display: block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--c8);
+}
+.contato-margin > span{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--c7);
+  padding-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.contato-margin > span::before{
+  content: "";
+  background-image: url(../contato/horario.svg);
+  width: 20px;
+  height: 17px;
+  display: inline-block;
+}
+.endereco-decorar{
+  border-left: 2px solid var(--c2);
+  padding-left: 16px;
+}
+.rio-de-janeiro, .sao-paulo{
+  background-color: white;
+}
+.contato-margin{
+  padding-top: 32px;
+  padding-left: 60px;
+}
+.contato-mapa-conteiner img{
+  border-radius: 5px 5px 0px 0px !important;
+}
+@media(max-width:900px){
+  .contato-conteiner{
+    grid-template-columns: 1fr;
+  }
+  .contato-redes{
+    padding-bottom: 32px;
+  }
+  .contato-loja{
+    border-radius: 5px 5px 0px 0px;
+  }
+  .contato-form{
+    border-radius: 0px 0px 5px 5px;
+    grid-template-columns: 1fr;
+    padding: 32px;
+  }
+  .contato-bg{
+    box-shadow: inset 0px -720px var(--c1);
+  }
+  .contato-margin{
+    padding-left: 12px;
+  }
+}

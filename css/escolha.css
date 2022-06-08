@@ -34,7 +34,6 @@ background: #FFBB00;
   transition: .3s;
 }
 
-
 .escolha-bicicletas span:not(#pontoAmarelo){
   font-family: 'Roboto';
   font-weight: 600;
