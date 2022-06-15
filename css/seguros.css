@@ -33,7 +33,7 @@ line-height: 24px;
   margin-top: 120px;
   margin-bottom: 120px;
 }
-.perguntas-frequentes h4{
+.perguntas-frequentes dt{
 font-family: 'Poppins';
 font-weight: 600;
 font-size: 1.125rem;
@@ -43,36 +43,56 @@ display: flex;
 align-items: center;
 gap: 8px;
 }
-.perguntas-frequentes h4::before{
+.perguntas-frequentes dt::before{
  content: "";
 display: inline-block;
 width: 12px;
 height: 8px;
 background: #FFBB00;
 }
-.perguntas-frequentes ul{
+.perguntas-frequentes dt {
+  position: relative;
+}
+.perguntas-frequentes dt::after{
+  content: "";
+  width: 14px;
+  height: 8px;
+  background:url(../icones/seta-abrir.svg) no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  transition: .3s;
+  cursor: pointer;
+}
+.perguntas-frequentes dt:hover::after{
+  transform: rotate(180deg);
+}
+.perguntas-frequentes [required]{
   margin-top: 120px;
 }
-.perguntas-frequentes li{
+dl > div{
   padding: 20px;
+  
 }
-.perguntas-frequentes li:nth-child(odd){
+.perguntas-frequentes div:nth-child(odd){
   background-color: var(--c1);
   
 }
-.perguntas-frequentes p{
+.perguntas-frequentes dd{
 font-family: 'Roboto';
 font-weight: 400;
 font-size: 1.125rem;
 line-height: 24px;
 color: var(--c9);
 max-width: 75ch;
+padding-top: 4px;
 }
 @media(max-width:800px){
   .vantagens-seguro ul{
     grid-template-columns: 1fr 1fr;
   }
-  .perguntas-frequentes p,.perguntas-frequentes h4{
+  .perguntas-frequentes dd,.perguntas-frequentes dt{
     font-size: 1rem;
   }
   .vantagens-seguro{
@@ -83,7 +103,7 @@ max-width: 75ch;
     margin-top: 60px;
     margin-bottom: 60px;
   }
-  .perguntas-frequentes ul{
+  .perguntas-frequentes [required]{
     margin-top: 60px;
   }
 }

@@ -1,0 +1,35 @@
+.termos{
+  padding-top: 120px;
+  padding-bottom: 120px;
+  max-width: 1200px;
+  padding-left:20px;
+  padding-right:20px;
+  margin: 0 auto;
+}
+.termos h2{
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  padding-bottom: 22px;
+}
+.termos p{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 24px;
+  color: var(--c10);
+  max-width: 80ch;
+}
+.termos p+p{
+  padding-top: 24px;
+}
+.termos li+li{
+  padding-top: 48px;
+}
+@media(max-width:800px){
+  .termos p{
+    font-size: 1rem;
+  }
+}

@@ -10,6 +10,9 @@
 @import url(./css/bicicletas.css);
 @import url(./css/nimbus.css);
 @import url(./css/contato.css);
+@import url(./css/termos.css);
+@import url(./css/orcamento.css);
+
 :root{
 
   --c1:#F7F7F7;
@@ -36,7 +39,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-ul,li,a{
+ul,li,a,dt,dd, dl{
   padding: 0px;
   margin: 0px;
   text-decoration: none;
