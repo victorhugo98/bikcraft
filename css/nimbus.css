@@ -17,6 +17,7 @@
 .nimbus-col-1 img{
   flex: 1;
   min-width: 130px;
+  cursor: pointer;
 }
 .nimbus-col-1 img:first-child{
   min-width: 100%;
