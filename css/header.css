@@ -13,8 +13,7 @@
 .header-bg ul{
   display: flex;
   flex-wrap: wrap;
-  gap: 60px;
-  
+  gap: 60px;  
 }
 .header-bg nav a{
   font-family: 'poppins';
@@ -45,4 +44,72 @@
 
 .header-bg nav a{
   color: white;
+}
+header{
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+  position: relative;
+}
+
+.item-1{
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+}
+.item-2{
+  margin-top: 4px;
+  display: block;
+  width: 20px;
+  height: 4px;
+  background-color: white;
+}
+.menu-mobile{
+  display: none;
+  z-index: 2500;
+  transition: .3s;
+}
+.menu-mobile.ativo{
+  opacity: .5;
+}
+@media (max-width:800px) {
+  .menu-mobile{
+    cursor: pointer;
+    display: block;
+  }
+  .header-bg ul{
+    position: absolute;
+    flex-direction: column;
+    left: 0px;
+    top: 0px;
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    background-color: var(--c12);
+    gap: 8px;
+    display: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px var(--c12);
+  }
+  .header-bg ul li + li{
+    padding-top: 6px;
+  }
+  .header-bg ul.ativo{
+    display: block;
+    animation: menu-mobile .3s forwards;
+  }
+  @keyframes menu-mobile {
+    from{
+      opacity: 0;
+      transform: translateX(-30px);
+    } 
+    to{
+      transform: translateX(0px);
+      opacity: 1;
+
+    }
+
+  }
 }

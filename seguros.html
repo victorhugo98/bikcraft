@@ -16,9 +16,13 @@
 <body>
   <header class="header-bg" >
     <div class="header-conteiner">
-    <a href="./" ><img src="./bikcraft.svg" alt="Logo Bikcraft"></a>
+      <div class="menu-mobile" aria-controls="nav-lista">
+        <span class="item-1"></span>
+        <span class="item-2"></span>
+      </div>
+    <a href="index.html" ><img src="./bikcraft.svg" alt="Logo Bikcraft"></a>
     <nav aria-label="Primária"> 
-      <ul>
+      <ul id="nav-lista">
         <li><a href="./bicicletas.html">Bicicletas</a></li>
         <li><a href="./seguros.html">Seguros</a></li>
         <li><a href="./contato.html">Contato</a></li>
@@ -29,14 +33,14 @@
 
   <article class="escolha-bicicleta-bg" aria-label="Seguros Titulo">
     <div class="escolha-bicicleta-conteiner nimbus-conteiner">
-    <span class="roboto-24 escolha-span">Escolha seu seguro</span>
-    <h1 class="poppins-64">Você seguro<span id="pontoAmarelo">.</span></h1>
+    <span class="roboto-24 escolha-span" data-anime="50">Escolha seu seguro</span>
+    <h1 class="poppins-64" data-anime="100">Você seguro<span id="pontoAmarelo">.</span></h1>
     </div>
   </article>
 
   <main class="seguros-bg" aria-label="Seguros">
     <div class="conteiner conteiner-seguros">
-      <div class="seguro-prata">
+      <div class="seguro-prata" data-anime="100">
         <div class="seguro-col-1">
        <h3>PRATA</h3>
       <ul>
@@ -53,7 +57,7 @@
      </div>
      </div>
   
-     <div class="seguro-ouro">
+     <div class="seguro-ouro" data-anime="200">
       <div class="seguro-col-1">
       <h3>OURO</h3>
       <ul>
@@ -79,7 +83,7 @@
   </main>
 
   <section class="vantagens-seguro-bg" aria-label="Vantagens do nosso seguro.">
-    <div class="vantagens-seguro">
+    <div class="vantagens-seguro" data-scroll>
     <h2 class="poppins-64 titulo-alinhar">Nossas vantagens<span id="pontoAmarelo">.</span></h2>
     <ul>
       <li>
@@ -113,7 +117,7 @@
 
   </section>
 
-  <section class="perguntas-frequentes" aria-label="Perguntas frequentes.">
+  <section class="perguntas-frequentes" aria-label="Perguntas frequentes." data-scroll>
     <h2 class="poppins-64">Perguntas frequentes<span id="pontoAmarelo">.</span></h2>
     <dl>
       <div required>
@@ -178,9 +182,9 @@
     
   </footer>
 
-  
 <script src="./script.js">
-
 </script>
+</div>
+
 </body>
 </html>

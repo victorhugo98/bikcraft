@@ -16,9 +16,13 @@
 <body class="bg-cinza-orcamento">
   <header class="header-bg" >
     <div class="header-conteiner">
-    <a href="./" ><img src="./bikcraft.svg" alt="Logo Bikcraft"></a>
+      <div class="menu-mobile" aria-controls="nav-lista">
+        <span class="item-1"></span>
+        <span class="item-2"></span>
+      </div>
+    <a href="index.html" ><img src="./bikcraft.svg" alt="Logo Bikcraft"></a>
     <nav aria-label="Primária"> 
-      <ul>
+      <ul id="nav-lista">
         <li><a href="./bicicletas.html">Bicicletas</a></li>
         <li><a href="./seguros.html">Seguros</a></li>
         <li><a href="./contato.html">Contato</a></li>
@@ -29,13 +33,13 @@
 
   <article class="escolha-bicicleta-bg">
     <div class="escolha-bicicleta-conteiner nimbus-conteiner">
-    <span class="roboto-24 escolha-span">Cotações no seu email</span>
-    <h1 class="poppins-64">Solicite um orçamento<span id="pontoAmarelo">.</span></h1>
+    <span class="roboto-24 escolha-span" data-anime="50">Cotações no seu email</span>
+    <h1 class="poppins-64" data-anime="100">Solicite um orçamento<span id="pontoAmarelo">.</span></h1>
     </div>
   </article>
 
-<main class="orcamento-bg" aria-label="Orçamentos">
-  <form action="./" class="orcamento-conteiner">
+<main class="orcamento-bg" aria-label="Orçamentos" >
+  <form action="./" class="orcamento-conteiner" data-anime="150">
     <div class="orcamento-opcoes">
       <h2>BIKCRAFT OU SEGURO?</h2>
           
@@ -197,5 +201,6 @@
 <script src="./script.js">
 
 </script>
+
 </body>
 </html>

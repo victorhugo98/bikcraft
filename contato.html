@@ -12,13 +12,15 @@
   <meta name="description" content="Projeto simples em HTML e CSS">
   <title>Bikcraft - Bicicletas elétricas.</title>
   <link rel="icon" href="./icones/eletrica.svg" type="image/svg+xml">
-</head>
-<body>
   <header class="header-bg" >
     <div class="header-conteiner">
-    <a href="./" ><img src="./bikcraft.svg" alt="Logo Bikcraft"></a>
+      <div class="menu-mobile" aria-controls="nav-lista">
+        <span class="item-1"></span>
+        <span class="item-2"></span>
+      </div>
+    <a href="index.html" ><img src="./bikcraft.svg" alt="Logo Bikcraft"></a>
     <nav aria-label="Primária"> 
-      <ul>
+      <ul id="nav-lista">
         <li><a href="./bicicletas.html">Bicicletas</a></li>
         <li><a href="./seguros.html">Seguros</a></li>
         <li><a href="./contato.html">Contato</a></li>
@@ -29,13 +31,13 @@
   
   <article class="escolha-bicicleta-bg" aria-label="Bicicletas Título">
     <div class="escolha-bicicleta-conteiner conteiner-contato">
-    <span class="roboto-24 escolha-span">Resposta em até 24h</span>
-    <h1 class="poppins-64">Nosso contato<span id="pontoAmarelo">.</span></h1>
+    <span class="roboto-24 escolha-span" data-anime="50">Resposta em até 24h</span>
+    <h1 class="poppins-64" data-anime="100">Nosso contato<span id="pontoAmarelo">.</span></h1>
     </div>
   </article>
 
   <main class="contato-bg">
-    <div class="contato-conteiner">
+    <div class="contato-conteiner" data-anime="150">
       <div class="contato-loja">
         <h2>Loja Online</h2>
         <ul class="contato-rua" >
@@ -79,7 +81,7 @@
     </div>
   </main>
 
-  <article class="contato-mapa">
+  <article class="contato-mapa" data-scroll>
     <h3 class="poppins-64 titulo-alinhar">Lojas locais<span id="pontoAmarelo">.</span></h3>
     <div class="contato-mapa-conteiner conteiner">
       <div class="rio-de-janeiro">
@@ -121,8 +123,6 @@
 
   </article>
 
-  
-  
 <footer class="footer">
 <div class="footer-grid">
   <div class="bikcraft-img-footer">
@@ -154,7 +154,6 @@
 
 </footer>
 <script src="./script.js">
-
 </script>
 </body>
 </html>

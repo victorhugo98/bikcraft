@@ -5,7 +5,9 @@
 }
 .intro-bg h1{
   color: white;
+  opacity: 0;
 }
+
 .intro-item{
   align-self: end;
   margin-bottom: 200px;
@@ -26,6 +28,34 @@
 .intro-item p{
   line-height: 1.5;
   color: var(--c5);
+  opacity: 0;
+}
+[data-anime]{
+  opacity: 0 ; 
+}
+[data-anime].ativo{
+  opacity: 1;
+  animation: animar .6s forwards;
+}
+[data-scroll]{
+  opacity: 0 ; 
+
+}
+[data-scroll].ativo{
+  opacity: 1;
+  animation: animar .6s forwards;
+}
+
+@keyframes animar{
+  from{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+
+  }
 }
 
 .intro-bg img{

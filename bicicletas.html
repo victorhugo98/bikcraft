@@ -16,9 +16,13 @@
 <body>
   <header class="header-bg" >
     <div class="header-conteiner">
-    <a href="./" ><img src="./bikcraft.svg" alt="Logo Bikcraft"></a>
+      <div class="menu-mobile" aria-controls="nav-lista">
+        <span class="item-1"></span>
+        <span class="item-2"></span>
+      </div>
+    <a href="index.html" ><img src="./bikcraft.svg" alt="Logo Bikcraft"></a>
     <nav aria-label="Primária"> 
-      <ul>
+      <ul id="nav-lista">
         <li><a href="./bicicletas.html">Bicicletas</a></li>
         <li><a href="./seguros.html">Seguros</a></li>
         <li><a href="./contato.html">Contato</a></li>
@@ -29,13 +33,13 @@
   
   <article class="escolha-bicicleta-bg" aria-label="Bicicletas Título">
     <div class="escolha-bicicleta-conteiner">
-    <span class="roboto-24 escolha-span">ESCOLHA A MELHOR PARA VOCÊ</span>
-    <h1 class="poppins-64">Nossas bicicletas<span id="pontoAmarelo">.</span></h1>
+    <span class="roboto-24 escolha-span" data-anime="50">ESCOLHA A MELHOR PARA VOCÊ</span>
+    <h1 class="poppins-64" data-anime="100">Nossas bicicletas<span id="pontoAmarelo">.</span></h1>
     </div>
   </article>
 
   <main class="escolha-bicicletas-lista" aria-label="Lista de Bicicletas">
-    <div class="conteiner conteiner-bicicletas">
+    <div class="conteiner conteiner-bicicletas" data-anime="250">
         <div class="bicicletas-col-1">
           <img src="./bicicletas/nimbus.jpg" alt="Nimbus Stark">
         </div>
@@ -59,9 +63,9 @@
     <div class="conteiner-preto">
       <div class="conteiner conteiner-bicicletas">
         <div class="bicicletas-col-1">
-          <img src="./bicicletas/magic.jpg" alt="Nimbus Stark">
+          <img src="./bicicletas/magic.jpg" alt="Nimbus Stark" data-scroll>
         </div>
-        <div class="bicicletas-col-2">
+        <div class="bicicletas-col-2" data-scroll>
         <img src="./decorativos/Rectangle 22.svg" alt="Decorativo">
           <h2>Magic Might</h2>
           <p>A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.
@@ -80,9 +84,9 @@
     </div>
     <div class="conteiner conteiner-bicicletas">
       <div class="bicicletas-col-1">
-        <img src="./bicicletas/nebula.jpg" alt="Nimbus Stark">
+        <img src="./bicicletas/nebula.jpg" alt="Nimbus Stark" data-scroll>
       </div>
-      <div class="bicicletas-col-2">
+      <div class="bicicletas-col-2" data-scroll>
        <img src="./decorativos/Rectangle 22.svg" alt="Decorativo">
         <h2>Nebula Cosmic</h2>
         <p>A Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.
@@ -130,8 +134,7 @@
 </div>
 
 </footer>
-<script src="./script.js">
+<script src="./script.js"></script>
 
-</script>
 </body>
 </html>
