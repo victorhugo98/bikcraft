@@ -8,7 +8,7 @@ const url = location.href
   links.classList.add('ativo')
  }
 }
-links.forEach(linkAfter)  
+links.forEach(linkAfter)
 }
 ativarLink()
 
@@ -83,27 +83,7 @@ function initMenuMobile(){
   })
 
 
-// function outsideClick(callback){
-//   const html = document.documentElement
-  
-//   window.setTimeout(()=>{
-//     userEvents.forEach((events)=>{
-//       html.addEventListener(events, handleOutsideClick)
-//       })
-//   })
 
-
-//   function handleOutsideClick(event){
-//     if(!event.target.contains(menuList) && !event.target.contains(menuMobile)){
-//       callback()
-//       menuMobile.setAttribute('aria-expanded', 'false')
-//       userEvents.forEach((events)=>{
-//         html.removeEventListener(events, handleOutsideClick)
-//       })
-//     }
-    
-//   }
-// }
 
 function outsideClick(callback){
   const atributo = 'data-outside'
@@ -118,7 +98,7 @@ function outsideClick(callback){
      userEvents.forEach(evento=>html.removeEventListener(evento, handleOutsideClick))
      menuMobile.setAttribute('aria-expanded', 'false')
      menuList.removeAttribute(atributo)
-     
+
    }
    }
 }
